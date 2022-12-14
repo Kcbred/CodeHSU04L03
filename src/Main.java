@@ -9,8 +9,8 @@ public class Main {
   public static void main(String[] args) {
         //System.out.println(VowelCount("This is a string."));
         //System.out.println("Correct output: 4");
-        System.out.println(VowelRemover("Remove all vowels"));
-        System.out.println("Correct output: Rmv ll vwls");
+        //System.out.println(VowelRemover("Remove all vowels"));
+        //System.out.println("Correct output: Rmv ll vwls");
         System.out.println(ContainsSubstring("Sentence","Sentence"));
         System.out.println("Correct output: 5");
         System.out.println(ReverseString("ABCDEF"));
@@ -87,7 +87,7 @@ public class Main {
      * @return reversed input String
      */
     public static String ReverseString(String input){
-        return "";
+
     }
 
     /**
@@ -96,7 +96,12 @@ public class Main {
      * @return true if given string is a palindrome, false otherwise
      */
     public static boolean PalindromeChecker(String input){
+        return input.equals(ReverseString(input));
 
-        return false;
+
+
+
+        }
+
     }
 }
